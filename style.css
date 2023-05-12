@@ -1,0 +1,148 @@
+
+
+
+.item1, .item2, .item4, .item5 {
+    font-family: 'Ahganirya', sans-serif;
+    font-size: 16px;
+  
+                                                
+}
+
+img.2 {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+ol.ol {
+    display: flex;
+    justify-content: space-between;
+}
+
+.item1 { grid-area: header;
+    height: 50px;
+    padding: 20px;
+    text-align: right;
+    
+}
+.item2 { grid-area: menu;
+    width: 270px;
+    padding: 20px; 
+}
+.item3 { grid-area: main; 
+    height: 600px;
+    width: 740px;
+    padding: 20px;
+}
+.item4 { grid-area: right;
+    height: 600px;
+    width: 230px;
+    padding: 20px; 
+}
+.item5 { grid-area: footer; 
+    height: 45px;
+    padding: 20px;
+    
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: white;
+  /* padding: 10%; */
+  height: 750px;
+  /* width: 1250px; */
+  margin: 0;
+  
+}
+
+.grid-container > div {
+  background-color: rgb(99, 248, 94);
+  text-align: left;
+  
+  /* padding: 20px 0; */
+  
+}
+
+#not {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+a:hover {
+    color: whitesmoke;
+    background-color: red;
+}
+
+
+
+@media screen and (max-width: 360px) {
+
+    .item1 { grid-area: header;
+        height: 90px;
+        width: 100%;
+        padding: 5px;
+        font-size: 13px;
+        
+    }
+    .item2 { grid-area: menu;
+        height: 90px;
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif; 
+        padding: 5px;
+        font-size: 12px;
+    }
+    .item3 { grid-area: main; 
+        height: 600px;
+        width: 100%;
+        font-size: 11px;
+        padding: 5px;
+    }
+    .item4 { grid-area: right;
+        height: 85px;
+        width: 100%;
+        padding: 5px;
+        font-size: 13px; 
+    }
+
+    
+    .item5 { grid-area: footer; 
+    height: 85px;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 4px;
+    align-items: left;
+    font-size: 12px;
+    list-style-type: ' ';
+    justify-content: space-around;
+    
+}
+   
+    .item3 img {
+         
+         width: 165px;
+         height: 110px;
+    
+}
+    .grid-container {
+
+        display: grid;
+        grid-template-areas: 
+            'header header header header header header'
+            'main main main main main main'
+            'right right right right right right'
+            'menu menu menu menu menu menu'
+            'footer footer footer footer footer footer'
+
+
+    }
+    
+}
+
+
+
+
